@@ -1,5 +1,10 @@
 /*  JavaScript Document                      */
 
+var myScroll;
+function loaded(){
+	myScroll = new iScroll('scroll', {checkDOMChanges:true});
+}
+document.addEventListener('DOMContentLoaded', loaded, false);
 
 $(document).ready(function(){
 
@@ -16,6 +21,8 @@ $(document).ready(function(){
 	$('.banner_logo').on('click', function(){
 		$('nav a:nth-child(1)').trigger('click');
 	});
+	
+	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
 
 });
 

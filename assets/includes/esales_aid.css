@@ -3,7 +3,12 @@
 
 /* Global Styles */
 body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 16px; background-color: #ddd; }
-
+h1 { margin: 15px 0px 12px 0px; font-weight: normal; font-family: Georgia; font-size: 48px; color: #489602; line-height: 50px; }
+h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 24px; color: #155102; }
+h3 { font-size: 1.2em; margin: 0px 0px 0px 0px; color: #155102; }
+p,ul { margin: 0px 0px 1.5em 0px; line-height: 22px; color: #3d2701; }
+a { color: #900; }
+.clear { clear: both; line-height: 1px; }
 
 /* Global Layout */
 
@@ -27,8 +32,16 @@ nav { position: absolute; bottom: 18px; left: 25px; }
 nav a { padding: 15px 15px 15px 30px; background: url(../images/template/leaves_nav.png?v=1) no-repeat 0px 7px; }
 nav a.selected { background-position: 0px -43px; }
 
+.gallery_container .thumbnail { float: left; margin: 0px 10px 10px 0px; display: inline-block; }
+.gallery_container .thumbnail img { border: 2px solid rgba(255,255,255,0); }
+.gallery_container .thumbnail img.selected { border-color: rgba(102,140,58,.4); }
+.gallery_container .thumbnails .caption_text { display: none; }
+
+
 /* Page-specific Style and Layout */
 .page.home article .content_container { background: url(../images/template/background_content_home.jpg?v=1) no-repeat 0px 0px; }
+.home_content h1 { margin: 20px 0px 30px 0px; font-weight: normal; font-family: Georgia; font-size: 60px; color: #489602; line-height: 50px; }
+.home_content h2 { margin: 0px 0px .5em 0px; font-family: Georgia; font-size: 32px; color: #155102; }
 
 
 /* Orientation-specific Layout - Landscape */
@@ -44,6 +57,15 @@ nav a.selected { background-position: 0px -43px; }
 .page.landscape.home .teapot_blue   { position: absolute; -webkit-transform: translate3d(800px,170px,0px); }
 .page.landscape.home .teapot_black  { position: absolute; -webkit-transform: translate3d(770px,258px,0px); }
 
+.page.landscape .home_content { width: 410px; }
+.page.landscape .video_graphic { position: absolute; right: 0px; top: 150px; }
+
+.page.landscape .gallery_container { width: 940px; position: relative; }
+.page.landscape .gallery_container .detail { width: 530px; margin: 0px 10px 0px 0px; border-right: 2px solid rgba(102,140,58,.4); float: left; }
+.page.landscape .gallery_container .detail img { width: 525px; height: 395px; }
+.page.landscape .gallery_container .thumbnails { width: 380px; float: left; }
+.page.landscape .gallery_container .thumbnails .thumbnail img { width: 110px; height: 83px; }
+.page.landscape .gallery_container .thumbnails .caption { width: 385px; height: 50px; position: absolute; bottom: 12px; right: 0px; }
 
 /* Orientation-specific Layout - Portrait */
 .page.portrait { position: relative; width: 768px; height: 1004px; overflow: hidden; }
@@ -57,6 +79,17 @@ nav a.selected { background-position: 0px -43px; }
 .page.portrait.home .teapot_clay   { position: absolute; -webkit-transform: translate3d(125px,575px,0px); }
 .page.portrait.home .teapot_blue   { position: absolute; -webkit-transform: translate3d(55px,635px,0px); }
 .page.portrait.home .teapot_black  { position: absolute; -webkit-transform: translate3d(125px,730px,0px); }
+
+.page.portrait .home_content { width: 700px; }
+.page.portrait .video_graphic { position: absolute; right: 0px; top: 470px; }
+
+.page.portrait .gallery_container { height: 680px; position: relative; }
+.page.portrait .gallery_container .detail { margin: 0px 0px 5px 0px; border-bottom: 2px solid rgba(102,140,58,.4); }
+.page.portrait .gallery_container .detail img { width: 525px; height: 395px; margin: 0px 0px 0px 75px; }
+.page.portrait .gallery_container .thumbnails { margin-top: 85px; }
+.page.portrait .gallery_container .thumbnails .thumbnail img { width: 100px; height: 76px; }
+.page.portrait .gallery_container .thumbnails .caption { height: 50px; position: absolute; top: 410px; left: 0px; }
+
 
 
 
