@@ -10,7 +10,7 @@ $(document).ready(function(){
 	$('nav a').on('click', function(){
 		$('nav a').removeClass('selected');
 		$(this).addClass('selected');
-		changePage( $(this).attr('datafile') );
+		changePage($(this).attr('data-file'));
 	})
 
 });
