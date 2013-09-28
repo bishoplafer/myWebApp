@@ -12,16 +12,16 @@ $(document).ready(function(){
 
 	setOrientationListener();
 	
-	$('nav a').on('click', function(){
+	$('nav a').on('touchstart', function(){
 		$('nav a').removeClass('selected');
 		$(this).addClass('selected');
 		changePage( $(this).attr('data-file') );
 	});
 	
-	$('nav a:nth-child(1)').trigger('click');
+	$('nav a:nth-child(1)').trigger('touchstart');
 	
-	$('.banner_logo').on('click', function(){
-		$('nav a:nth-child(1)').trigger('click');
+	$('.banner_logo').on('touchstart', function(){
+		$('nav a:nth-child(1)').trigger('touchstart');
 	});
 	
 	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);

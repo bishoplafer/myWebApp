@@ -3,13 +3,13 @@
 	$(document).ready(function() {
 	
 		// Gallery
-		$('.thumbnail img').on('click', function(){
+		$('.thumbnail img').on('touchstart', function(){
 			$('.detail img').attr('src',$(this).attr('src')).removeClass('selected');
 			$('.thumbnails img').removeClass('selected');
 			$(this).addClass('selected');
 			$('.thumbnails .caption').html($(this).parent().find('.caption_text').html());
 		});
-		$('.thumbnail img').first().trigger('click');
+		$('.thumbnail img').first().trigger('touchstart');
 	
 	});
 
