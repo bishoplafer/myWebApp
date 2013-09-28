@@ -1,0 +1,62 @@
+/*  CSS Document                             */
+@charset "UTF-8";
+
+/* Global Styles */
+body { margin: 0px; padding: 0px; font-family: Helvetica; font-size: 16px; background-color: #ddd; }
+
+
+/* Global Layout */
+
+header  { display: block; position: absolute; top: 0px; left: 0px; height: 70px; background: url(../images/template/background_banner.jpg?v=1) no-repeat 0px 0px; -webkit-box-shadow: 0px 5px 4px rgba(28,84,0,0.15); box-shadow: 0px 5px 4px rgba(28,84,0,0.15); }
+article { display: block; position: absolute; top: 70px; left: 0px; background: url(../images/template/background_content.jpg?v=1) repeat-x 0px 0px; }
+article .content_container { position: absolute; top: 0px; left: 0px; background: none; }
+article .content_container .content_loading_container { position: absolute; top: 0px; padding: 40px 20px 0px 40px; }
+footer  { display: block; position: absolute; bottom: 0px; left: 0px; height: 60px; background-color: #fff; }
+nav { position: absolute; bottom: 18px; left: 25px; }
+
+.banner_logo{ position: absolute; top:0px; left:0px; }
+.banner_leaves{ position: absolute; top:3px; right: 0px; }
+
+.teapot_orange, .teapot_clay, .teapot_blue, .teapot_black  { -webkit-transition: -webkit-transform 1s ease-in-out; }
+
+.teapot_orange { position: absolute; -webkit-transform: translate3d(345px,1024px,0px); }
+.teapot_clay   { position: absolute; -webkit-transform: translate3d(-250px,140px,0px); }
+.teapot_blue   { position: absolute; -webkit-transform: translate3d(800px,-200px,0px); }
+.teapot_black  { position: absolute; -webkit-transform: translate3d(1200px,258px,0px); }
+
+nav a { padding: 15px 15px 15px 30px; background: url(../images/template/leaves_nav.png?v=1) no-repeat 0px 7px; }
+nav a.selected { background-position: 0px -43px; }
+
+/* Page-specific Style and Layout */
+.page.home article .content_container { background: url(../images/template/background_content_home.jpg?v=1) no-repeat 0px 0px; }
+
+
+/* Orientation-specific Layout - Landscape */
+.page.landscape  { position: relative; width: 1024px; height: 748px; overflow: hidden; }
+.page.landscape header  { width: 1024px; }
+.page.landscape article { width: 1024px; height: 618px; }
+.page.landscape footer  { width: 1024px; }
+
+.page.landscape article .content_container { width: 1024px; height: 618px; }
+
+.page.landscape.home .teapot_orange { position: absolute; -webkit-transform: translate3d(450px,300px,0px); }
+.page.landscape.home .teapot_clay   { position: absolute; -webkit-transform: translate3d(640px,140px,0px); }
+.page.landscape.home .teapot_blue   { position: absolute; -webkit-transform: translate3d(800px,170px,0px); }
+.page.landscape.home .teapot_black  { position: absolute; -webkit-transform: translate3d(770px,258px,0px); }
+
+
+/* Orientation-specific Layout - Portrait */
+.page.portrait { position: relative; width: 768px; height: 1004px; overflow: hidden; }
+.page.portrait header  { width: 768px; }
+.page.portrait article { width: 768px; height: 874px; }
+.page.portrait footer  { width: 768px; }
+
+.page.portrait article .content_container { width: 768px; height: 874px; }
+
+.page.portrait.home .teapot_orange { position: absolute; -webkit-transform: translate3d(330px,535px,0px); }
+.page.portrait.home .teapot_clay   { position: absolute; -webkit-transform: translate3d(125px,575px,0px); }
+.page.portrait.home .teapot_blue   { position: absolute; -webkit-transform: translate3d(55px,635px,0px); }
+.page.portrait.home .teapot_black  { position: absolute; -webkit-transform: translate3d(125px,730px,0px); }
+
+
+
